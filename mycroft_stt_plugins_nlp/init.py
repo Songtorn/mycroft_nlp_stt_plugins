@@ -6,11 +6,12 @@ import json
 import requests
 import boto3
 from mycroft.stt import STT
-
+from mycroft.util import LOG
 
 class nlpSTTPlugin(STT):
 
     def execute(self, audio, language=None):
+        LOG.info("pass")
         fileName = uuid.uuid4().hex+".wav"
         with open(fileName, "wb") as f:
             f.write(audio.get_wav_data())
