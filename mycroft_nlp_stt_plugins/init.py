@@ -9,6 +9,8 @@ from mycroft.stt import STT
 from mycroft.util import LOG
 
 class nlpSTTPlugin(STT):
+    def __init__(self):
+        super(nlpSTTPlugin, self).__init__()
 
     def execute(self, audio, language=None):
         LOG.info("pass")
