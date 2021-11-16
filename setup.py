@@ -8,7 +8,7 @@ with open(join(dirname(abspath(__file__)), 'requirements.txt')) as f:
 
 PLUGIN_ENTRY_POINT = 'nlp_stt_plugin = mycroft_nlp_stt_plugins:nlpSTTPlugin'
 setup(
-    name='mycroft-stt-plugins-nlp',
+    name='mycroft-nlp-stt-plugins',
     version='0.1',
     description='NLU stt plugin for mycroft',
     url='https://github.com/Songtorn/mycroft_stt_plugins_nlp.git',
