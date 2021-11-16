@@ -15,7 +15,7 @@ setup(
     author='Songtorn',
     author_email='punn.sk137@gmail.com',
     license='Apache-2.0',
-    packages=['mycroft_stt_plugins_nlp'],
+    packages=['mycroft_nlp_stt_plugins'],
     install_requires=requirements,
     zip_safe=True,
     classifiers=[
