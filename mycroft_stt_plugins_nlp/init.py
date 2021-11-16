@@ -11,7 +11,7 @@ from mycroft.stt import STT
 class nlpSTTPlugin(STT):
 
     def execute(self, audio, language=None):
-        fileName = uuid.uuid4().hex+".mp3"
+        fileName = uuid.uuid4().hex+".wav"
         with open(fileName, "wb") as f:
             f.write(audio.get_wav_data())
         self.uploadS3(fileName)
