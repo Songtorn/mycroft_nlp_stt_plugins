@@ -6,16 +6,16 @@ from setuptools import setup
 with open(join(dirname(abspath(__file__)), 'requirements.txt')) as f:
     requirements = f.readlines()
 
-PLUGIN_ENTRY_POINT = 'nlp_stt_plugin = mycroft_nlp_stt_plugin:nlpSTTPlugin'
+PLUGIN_ENTRY_POINT = 'nlp_stt_plugin = mycroft_nlp_stt_plugins:nlpSTTPlugin'
 setup(
-    name='mycroft-stt-plugin-nlp',
+    name='mycroft-stt-plugins-nlp',
     version='0.1',
     description='NLU stt plugin for mycroft',
-    url='https://github.com/scg-wedo/mycroft_stt_plugin_nlp.git',
-    author='Natchanon Pornprasatpol',
-    author_email='natchpor@scg.com',
+    url='https://github.com/Songtorn/mycroft_stt_plugins_nlp.git',
+    author='Songtorn',
+    author_email='punn.sk137@gmail.com',
     license='Apache-2.0',
-    packages=['mycroft_stt_plugin_nlp'],
+    packages=['mycroft_stt_plugins_nlp'],
     install_requires=requirements,
     zip_safe=True,
     classifiers=[
